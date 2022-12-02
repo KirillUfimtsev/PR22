@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:text="Предел"
+            android:textStyle="bold"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="    Предел функции – величина, к которой стремится значение данной функции при стремлении ее аргумента к предельной для области определения точке.\n    Любой предел состоит из трех частей:\n1) Всем известного значка предела\n2)Записи под значком предела, в данном случае X -> 1. Запись читается «икс стремится к единице». Чаще всего – именно X, хотя вместо «икса» на практике встречаются и другие переменные. В практических заданиях на месте единицы может находиться совершенно любое число, а также бесконечность ().\n 3) Функции под знаком предела\nВыражение «икс стремится к единице» следует понимать так – «икс» последовательно принимает значения, которые бесконечно близко приближаются к единице и практически с ней совпадают.\n Другими словами, что число A есть пределе функции f(x) в точке x=a, если для всех х, достаточно близких к числу A и отличных от него, соответствующие им значения функции f(x) оказываются сколь угодно близким к числу А (естественно, в тех точках х, в которых функция f(x) определена)\n    "/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
